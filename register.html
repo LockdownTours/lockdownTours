@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <base target="_parent" />
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="img/favicon.ico" />
+
+    <title>Lockdown Tours | Register Interest | Japan</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.0/examples/album/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/register.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link
+      href="https://getbootstrap.com/docs/4.0/examples/album/album.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 pt-4 pb-3">
+              <p class="text-white">
+                Holiday plans cancelled? We provide free live virtual tours
+                taking you straight to your destination.
+              </p>
+
+              <p class="text-white">
+                Lockdown tours matches you with a local who will guide you in
+                real-time based on your interests and what you want to see for
+                free!
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 pt-4 pb-3">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="d-flex justify-content-between">
+          <div class="row">
+
+            <div class="col-2 pt-2">
+              <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarHeader"
+              aria-controls="navbarHeader"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+
+            <div class="col-9">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+              <strong
+              ><h2 class="my-2 text-white ml-3">Lockdown tours</h2></strong
+              >
+              <img src="img/logo.png" width="50px" class="logo ml-2" />
+            </a>
+          </div>
+          
+        </div>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <div
+        class="position-relative overflow-hidden p-3 p-md-5 text-center register-header"
+      >
+        <div class="row register-header py-3">
+          <div class="col-6 text-center">
+            <h2 class="my-5 py-5 ml-3 text-white">
+              Lockdown tours
+              <hr />
+              <span class="registerType"></span>
+            </h2>
+          </div>
+          <div class="col-6 text-right">
+            <img src="img/register/japan.png" height="300px" />
+          </div>
+        </div>
+      </div>
+
+      <section class="text-center">
+        <div class="container"></div>
+        <div class="col-6 offset-3">
+          <form class="text-left m-5 register-form">
+            <div class="form-group">
+              <div>
+                <label for="exampleInputEmail1">Email address</label>
+                <input
+                required
+                  name="email"
+                  type="email"
+                  class="form-control emailInput"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <!-- Area I would like to visit -->
+              <div class="mt-4">
+                <label for="exampleInputEmail1"
+                  >Areas I would like to visit</label
+                >
+                <div class="areaContainer"></div>
+                <!-- <button class="btn btn-primary register-btn">tokyo <img src="img/register/close-button.png" width="15px"> </button> -->
+                <div class="row">
+                  <div class="col-10">
+                    <input
+                      class="form-control areaInput"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter more or specific area(s)"
+                    />
+                  </div>
+                  <div class="col-2">
+                    <p class="btn btn-info register-txt register-btn addArea">Add</p>
+                  </div>
+                </div>
+                <!-- Areas of interest -->
+                <div class="mt-4">
+                  <label for="exampleInputEmail1"
+                    >Things I would like to be covered in the tour</label
+                  >
+                  <div class="interestContainer"></div>
+                <div class="row">
+                  <div class="col-10">
+                    <input
+                      class="form-control interestInput"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter interest(s)"
+                    />
+                  </div>
+                  <div class="col-2">
+                    <p class="btn btn-info register-txt register-btn addInterest">Add</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-check mt-5">
+              <input
+                onclick="canSubmit()"
+                type="checkbox"
+                class="form-check-input happyToPay"
+                id="happyToPay"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >I'm happy to pay a £5 deposit to guarantee a spot <br>
+                This will be refunded at the beginning the tour.</label
+              >
+            </div>
+            <div class="text-center mt-5">
+              <p disabled value="validate" type="submit" class="register-disabled register-submit-btn px-5 btn btn-info register-txt register-btn">
+                Submit
+              </p>
+            </div>
+            <p class="alert alert-danger registerInstruction">Please fill email and ensure the deposit box is ticked.</p>
+          </form>
+        </div>
+      </section>
+      <section class="register-loading text-center">
+        <img src="img/register/loading.gif" width="125px">
+        <p class="mt-2"> Loading... </p>
+      </section>
+      <section class="register-success text-center">
+        <h2 class="mt-2"> Thanks! <br> We'll match make you with a guide then be in touch. </h2>
+      </section>
+      <section class="register-failure text-center">
+        <h2>Oh oh! Something has gone wrong! <br> <a href="">Please try again!</a></h2>
+      </section>
+
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="px-0 center my-2 text-center register-footer" style="width: 300px">
+            <img src="img/tokyoLogo.png" width="300px" />
+            <h2 class="lockdownTitle my-3">
+              Lockdown tours
+              <hr class="my-3" />
+              Japan
+            </h2>
+          </div>
+
+          <p class="float-right">
+            <a href="#">Back to top</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>'
+        );
+    </script>
+    <script src="js/register.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/holder.min.js"></script>
+  </body>
+</html>

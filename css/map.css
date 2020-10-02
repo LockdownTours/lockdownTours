@@ -1,0 +1,101 @@
+.cityTxt {
+  width: 140px;
+  position: absolute;
+  z-index: 2;
+}
+
+.cityTxt h4 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.cityTxt p {
+  font-size: 11px;
+  margin-bottom: 0px;
+}
+
+.cityTxt button {
+  border: 0px;
+  border-radius: 3px;
+  font-size: 13px;
+  margin-left: 7px;
+  width: 118px;
+}
+
+.tokyoText {
+  top: 238px;
+  left: 415px;
+  width: 139px;
+}
+
+.tokyoText button {
+  margin-left: -3px;
+  width: 91px;
+}
+
+.kyotoTxt {
+  top: 265px;
+  left: 183px;
+}
+.osakaTxt {
+  top: 460px;
+  left: 268px;
+}
+.osakaTxt button {
+  width: 82px;
+}
+
+.sapporoTxt {
+  top: 98px;
+  left: 468px;
+}
+
+.circular {
+  position: absolute;
+  border-radius: 800px;
+  width: 90px;
+  z-index: 1;
+}
+
+.tokyoProfileImg {
+  left: 506px;
+  top: 292px;
+}
+.kyotoProfileImg {
+  left: 277px;
+  top: 217px;
+}
+.osakaProfileImg {
+  left: 363px;
+  top: 510px;
+}
+.sapporoProfileImg {
+  left: 565px;
+  top: 34px;
+}
+
+.bubble {
+  position: absolute;
+  width: 165px;
+  left: 150px;
+}
+
+.tokyo {
+  left: 394px;
+  top: 219px;
+}
+.osaka {
+  transform: scaleY(-1);
+  left: 251px;
+  top: 414px;
+}
+.sapporo {
+  transform: scaleY(-1);
+  left: 454px;
+  top: 49px;
+}
+.kyoto {
+  left: 168px;
+  top: 245px;
+  transform: scaleX(-1);
+}

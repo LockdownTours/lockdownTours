@@ -1,0 +1,49 @@
+.register-header {
+  background: black;
+}
+
+.register-form {
+  font-weight: 300;
+}
+
+.register-btn:hover {
+  background: gray;
+}
+
+.register-btn {
+  border: 0;
+  background: black;
+}
+
+.btn-info.hover,
+.btn-info:hover {
+  background-color: red;
+  cursor: not-allowed;
+}
+
+.register-submit-btn {
+  background: #ff6132;
+}
+.register-txt {
+  font-family: Agenor-Regular;
+}
+
+.register-footer h2 {
+  color: gray;
+}
+
+.register-footer hr {
+  border-color: gray;
+}
+.register-footer .lockdownTitle {
+  border-color: gray;
+}
+
+.register-disabled {
+  background-color: #7a7d7d;
+  cursor: not-allowed;
+}
+
+hr {
+  border-color: white;
+}

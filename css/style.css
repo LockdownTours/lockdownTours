@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Agenor-Black";
+  src: URL("../fonts/Agenor-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Agenor-Bold";
+  src: URL("../fonts/Agenor-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Agenor-Light";
+  src: URL("../fonts/Agenor-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Agenor-Regular";
+  src: URL("../fonts/Agenor-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Agenor-Thin";
+  src: URL("../fonts/Agenor-Thin.ttf") format("truetype");
+}
+
+.navbarTitle {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 3;
+}
+
+.navbarContent {
+  position: fixed;
+  width: 100%;
+  top: 65px;
+  z-index: 3;
+}
+
+iframe {
+  border: 0px;
+}
+
+.logo {
+  margin-top: -6px;
+}
+
+h2 {
+  color: #5f5f5f;
+  font-family: "Agenor-Thin";
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+hr {
+  border-color: #ff6132;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+}
+
+.interestContainer {
+  width: 365px;
+}
+
+@media all and (min-width: 700px) {
+  .isMobile{
+    display: none;
+  }
+
+  .notMobile{
+    display: block;
+  }
+} 
+@media all and (max-width: 700px) {
+  .isMobile{
+    display: block;
+  }
+
+  .notMobile{
+    display: none;
+  }
+} 

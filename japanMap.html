@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/map.css" rel="stylesheet" />
+  </head>
+
+  <body style="margin: 0">
+    <div style="width: 800px">
+      <div class="osakaTxt cityTxt">
+        <h4>Osaka</h4>
+        <p>Colourful, food-loving, lively, humorous, nocturnal.</p>
+        <a href="#" onclick="goToRegister({area: 'Osaka'})">
+          <button class="btn-small btn-danger">Go on tour!</button>
+        </a>
+      </div>
+      <div class="kyotoTxt cityTxt">
+        <h4>Kyoto</h4>
+        <p>
+          World-famous for its refined culture. Discover the charm of Old Japan.
+        </p>
+        <a href="#" onclick="goToRegister({area: 'Kyoto'})">
+          <button class="btn-small btn-danger">Experience it!</button>
+        </a>
+      </div>
+      <div class="sapporoTxt cityTxt">
+        <h4>Sapporo</h4>
+        <p>
+          Visit the buzzing gateway to Hokkaido’s mountains and hot springs.
+        </p>
+        <a href="#" onclick="goToRegister({area: 'Sapporo'})">
+          <button class="btn-small btn-danger">Go on a live tour!</button>
+        </a>
+      </div>
+      <div class="tokyoText cityTxt">
+        <h4>Tokyo</h4>
+        <p>Visit the world's world's most populous metropolis!</p>
+        <a href="#" onclick="goToRegister({area: 'Tokyo'})">
+          <button class="btn-small btn-danger">See it live!</button>
+        </a>
+      </div>
+      <img src="img/tokyo.png" class="circular tokyoProfileImg" />
+      <img src="img/sapporo.png" class="circular sapporoProfileImg" />
+      <img src="img/osaka.png" class="circular osakaProfileImg" />
+      <img src="img/kyoto.png" class="circular kyotoProfileImg" />
+      <img src="img/bubble.png" class="bubble sapporo" />
+      <img src="img/bubble.png" class="bubble osaka" />
+      <img src="img/bubble.png" class="bubble kyoto" />
+      <img src="img/bubble.png" class="bubble tokyo" />
+      <img src="img/map.png" width="800px" />
+    </div>
+  </body>
+  <script src="js/link.js"></script>
+</html>
