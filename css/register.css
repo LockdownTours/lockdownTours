@@ -47,3 +47,17 @@
 hr {
   border-color: white;
 }
+
+.register-loading, .register-success, .register-failure {
+  display: none;
+}
+
+
+
+.tokyoImg{
+
+  position: absolute;
+  left: -35px;
+  overflow: hidden;
+
+}

@@ -102,6 +102,23 @@ $(document).on("click", ".register-submit-btn", function () {
     console.log("Email: ", email);
     console.log("Interests: ", interests);
     console.log("Areas: ", areas);
+
+    var database = firebase.database();
+    firebase.database().ref('users/').push({
+      email: email,
+      interests: interests,
+      areas: areas
+    }, function(error) {
+      if (error) {
+        $('.register-failure').show();
+        $('.register-form').hide();
+        console.log('Error: ', error)
+      } else {
+        $('.register-success').show();
+        $('.register-form').hide();
+      }
+    });
+
   } else {
     $(".registerInstruction").show();
   }
