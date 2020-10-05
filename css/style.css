@@ -58,6 +58,10 @@ hr {
   width: 50%;
 }
 
+.border-white-top{
+  border-top: white solid 1px;
+}
+
 .interestContainer {
   width: 365px;
 }
