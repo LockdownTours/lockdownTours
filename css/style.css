@@ -68,6 +68,7 @@ hr {
 
 .navbarLogo {
   width: 45px;
+    margin-bottom: 3px;
 }
 
 @media all and (min-width: 700px) {
@@ -88,9 +89,6 @@ hr {
     font-size: 20px;
   }
 
-  .navbarLogo {
-    width: 40px;
-  }
 
   .notMobile{
     display: none;
