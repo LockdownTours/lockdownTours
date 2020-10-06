@@ -66,6 +66,10 @@ hr {
   width: 365px;
 }
 
+.navbarLogo {
+  width: 45px;
+}
+
 @media all and (min-width: 700px) {
   .isMobile{
     display: none;
@@ -78,6 +82,14 @@ hr {
 @media all and (max-width: 700px) {
   .isMobile{
     display: block;
+  }
+
+  .navbarHeader{
+    font-size: 20px;
+  }
+
+  .navbarLogo {
+    width: 40px;
   }
 
   .notMobile{
