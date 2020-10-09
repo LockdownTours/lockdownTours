@@ -55,65 +55,7 @@
   </head>
 
   <body>
-    <header>
-      <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 pt-4 pb-3">
-              <p class="text-white">
-                Holiday plans cancelled? We provide free live virtual tours
-                taking you straight to your destination.
-              </p>
-
-              <p class="text-white">
-                Lockdown tours matches you with a local who will guide you in
-                real-time based on your interests and what you want to see for
-                free!
-              </p>
-            </div>
-            <div class="w-100 mx-3 d-sm-block d-md-none border-white-top"></div>
-            <div class="col-sm-4 offset-md-1 pt-4 pb-3">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled">
-                <li><a href="https://twitter.com/LockdownTours" class="text-white" target="_blank">Follow on Twitter</a></li>
-                <!-- <li><a href="#" class="text-white">Like on Facebook</a></li> -->
-                <li><a href="mailto:lockdowntours@gmail.com" class="text-white" target="_blank">Email me</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navbar navbar-dark bg-dark box-shadow">
-        <div class="d-flex justify-content-between">
-          <div class="row">
-
-            <div class="col-1 pt-2 pl-1">
-              <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarHeader"
-              aria-controls="navbarHeader"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            </div>
-
-            <div class="col-10 ml-2">
-            <a href="#" class="navbar-brand d-flex align-items-center">
-              <strong
-              ><h2 class="my-2 text-white ml-3 navbarHeader">Lockdown tours</h2></strong
-              >
-              <img src="img/logo.png" class="ml-3 navbarLogo" class="logo ml-2" />
-            </a>
-          </div>
-          
-        </div>
-        </div>
-      </div>
-    </header>
+    <div w3-include-html="header.html"></div>
 
     <main role="main">
       <section class="text-center">
@@ -573,5 +515,37 @@
     <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
     <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
     <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/holder.min.js"></script>
+
+    <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            /* Make an HTTP request using the attribute value as the file name: */
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4) {
+                if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                /* Remove the attribute, and call this function once more: */
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
+              }
+            }
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
+          }
+        }
+      }
+      includeHTML();
+      </script>
+
   </body>
 </html>
