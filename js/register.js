@@ -2,7 +2,13 @@ let interests = [];
 let areas = [];
 
 function getDetails() {
-  var details = JSON.parse(localStorage.getItem("tourDetails"));
+  var details;
+  try {
+    details = JSON.parse(localStorage.getItem("tourDetails"));
+  }
+  catch(err) {
+    details = {};
+  }
   // Print value for header
   var value = "Japan";
   for (key in details) {
