@@ -1,509 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <base target="_parent" />
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <link rel="icon" href="img/favicon.ico" />
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="shortcut icon" 
-      href="img/favicon.ico">
-
-
-    <!-- Primary Meta Tags -->
-    <title>Lockdown Tours | London</title>
-    <meta name="title" content="Lockdown Tours | London">
-    <meta name="description" content="Lockdown tours matches you with a local who will guide you in real-time based on your interests and what you want to see for free!">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://lockdowntours.com">
-    <meta property="og:title" content="Lockdown Tours | London">
-    <meta property="og:description" content="Lockdown tours matches you with a local who will guide you in real-time based on your interests and what you want to see for free!">
-    <meta property="og:image" content="http://lockdowntours.com/img/twitter.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary">
-    <meta property="twitter:url" content="http://lockdowntours.com">
-    <meta property="twitter:title" content="Lockdown Tours | London">
-    <meta property="twitter:description" content="Lockdown tours matches you with a local who will guide you in real-time based on your interests and what you want to see for free!">
-    <meta property="twitter:image" content="http://lockdowntours.com/img/twitter.png">
-
-    <title>Lockdown Tours | London</title>
-
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/4.0/examples/album/"
-    />
-
     <!-- Bootstrap core CSS -->
     <link
       href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link href="css/style.css" rel="stylesheet" />
-
-    <!-- Custom styles for this template -->
-    <link
-      href="https://getbootstrap.com/docs/4.0/examples/album/album.css"
-      rel="stylesheet"
-    />
+    <link href="css/london/map.css" rel="stylesheet" />
   </head>
 
-  <body>
-    <div w3-include-html="header.html"></div>
-
-    <main role="main">
-      <section class="text-center">
-        <div class="px-0 center my-2 text-center" style="width: 300px">
-          <h2 class="my-4">
-            Lockdown tours
-            <hr />
-            London
-          </h2>
-        </div>
-        <div class='isMobile'>
-          <!-- WESTMINSTER MOBILE -->
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img
-                class="card-img-top"
-                src="img/london/Optimized-debbie-fan-KVmKINrtLVk-unsplash.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  <b>Westminster</b><br />
-                  From Big Ben to Buckingham Palace, discover the heart of Britain!
-                </p>
-                <div
-                  class="d-flex justify-content-between align-items-center"
-                >
-                  <div class="btn-group">
-                    <a href="#" onclick="goToRegister({interest: 'Westminster'})">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Register for free live tour
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- westminster mobile -->
-
-          <!-- NOTTING HILL MOBILE -->
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img
-                class="card-img-top"
-                src="img/london/Optimized-lukas-skoe-_4BKcFKKI1k-unsplash.jpg"
-                alt="Notting Hill image"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  <b>Notting Hill</b><br />
-                  London's most iconic neighbourhood.
-                </p>
-                <div
-                  class="d-flex justify-content-between align-items-center"
-                >
-                  <div class="btn-group">
-                    <a href="#" onclick="goToRegister({interest: 'Notting Hill'})">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Register for free live tour
-                      </button>
-                    </a>
-                    <!-- <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      Edit
-                    </button> -->
-                  </div>
-                  <!-- <small class="text-muted">9 mins</small> -->
-                </div>
-              </div>
-            </div>
-          </div>
-           <!-- Notting Hill mobile -->
-
-          <!-- CENTRAL LONDON MOBILE -->
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img
-                class="card-img-top"
-                src="piccadilly circus.jpg"
-                alt="Central london image"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  <b>Central London</b><br />
-                Lose yourself in the mix of tradition, culture, commerce and innovation!
-                </p>
-                <div
-                  class="d-flex justify-content-between align-items-center"
-                >
-                  <div class="btn-group">
-                    <a href="#" onclick="goToRegister({interest: 'CENTRAL LONDON'})">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Register for free live tour
-                      </button>
-                    </a>
-                    <!-- <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      Edit
-                    </button> -->
-                  </div>
-                  <!-- <small class="text-muted">9 mins</small> -->
-                </div>
-              </div>
-            </div>
-          </div>
-           <!-- CENTRAL LONDON mobile -->
-          <!-- KINGS X MOBILE -->
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img
-                class="card-img-top"
-                src="img/london/Optimized-emrecan-arik-8Q91Wh2K3oY-unsplash.jpg"
-                alt="Kings X image"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  <b>Kings Cross</b><br />
-                  A magical place with a fantastic canal-side setting!
-                </p>
-                <div
-                  class="d-flex justify-content-between align-items-center"
-                >
-                  <div class="btn-group">
-                    <a href="#" onclick="goToRegister({interest: 'samurai'})">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Register for free live tour
-                      </button>
-                    </a>
-                    <!-- <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      Edit
-                    </button> -->
-                  </div>
-                  <!-- <small class="text-muted">9 mins</small> -->
-                </div>
-              </div>
-            </div>
-          </div>
-           <!-- kings X mobile -->
-        </div>
-        <div class="notMobile">
-          <iframe
-            width="804px"
-            height="615"
-            src="LondonMap.html"
-            scrolling="no"
-          ></iframe>
-        </div>
-        <div class="jumbotron-heading center interestContainer">
-          <p class="my-2">Part of London you're interested in not listed?</p>
-          <hr class="my-2" />
-          <p class="my-2 mb-3">
-            <a href="#" onclick="goToRegister()"
-              >Please click here to register your points of interest!</a
-            >
-          </p>
-        </div>
-      </section>
-
-      <div class="album py-5 bg-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  class="card-img-top"
-                  src="img/london/portobello.jpg"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    <b>Market tour</b><br />
-                    Have a local expert show you London's best street markets!
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a
-                        href="#"
-                        onclick="goToRegister({interest: 'manga tour'})"
-                      >
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Register for free live tour
-                        </button>
-                      </a>
-                    </div>
-                    <!-- <small class="text-muted">9 mins</small> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  class="card-img-top"
-                  src="img/london/holland park.jpg"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    <b>Beautiful parks</b><br />
-                    Visit the impressive parks, historic gardens and hidden gems that London has to offer!
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a
-                        href="#"
-                        onclick="goToRegister({interest: 'temple tour'})"
-                      >
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Register for free live tour
-                        </button>
-                      </a>
-                      <!-- <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button> -->
-                    </div>
-                    <!-- <small class="text-muted">9 mins</small> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  class="card-img-top"
-                  src="img/london/pub.jpeg"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    <b>Pub crawl</b><br />
-                    Drink with a local through all the best watering holes in London.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a
-                        href="#"
-                        onclick="goToRegister({interest: 'food  tour'})"
-                      >
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Register for free live tour
-                        </button>
-                      </a>
-                      <!-- <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button> -->
-                    </div>
-                    <!-- <small class="text-muted">9 mins</small> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  class="card-img-top"
-                  src="img/london/london bus.jpeg"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    <b>Double decker tour</b><br />
-                    See all the sights from a red double decker.
-                    As we cruise through all the big sight-seeing locations.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="#" onclick="goToRegister({interest: 'culture'})">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Register for free live tour
-                        </button>
-                      </a>
-                      <!-- <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button> -->
-                    </div>
-                    <!-- <small class="text-muted">9 mins</small> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  class="card-img-top"
-                  src="img/london/harry potter.jpeg"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    <b>Harry potter tour</b><br />
-                    Discover movie locations and several sites that inspired JK Rowling's famous books.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a href="#" onclick="goToRegister({interest: 'samurai'})">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Register for free live tour
-                        </button>
-                      </a>
-                      <!-- <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button> -->
-                    </div>
-                    <!-- <small class="text-muted">9 mins</small> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img
-                  class="card-img-top"
-                  src="img/london/london-nightlife-1024x674.jpeg"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    <b>London at night</b><br />
-                    Hit the best clubs, bars and streets of London at night. 
-                    Home to the most colorful nightlife in the world.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <a
-                        href="#"
-                        onclick="goToRegister({interest: 'nightlife'})"
-                      >
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Register for free live tour
-                        </button>
-                      </a>
-                      <!-- <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button> -->
-                    </div>
-                    <!-- <small class="text-muted">9 mins</small> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <body style="margin: 0">
+    <div style="width: 800px">
+      <div class="nottingHillTxt cityTxt">
+        <h4>Notting Hill</h4>
+        <p>London's most iconic neighbourhood and Portobello Market!</p>
+        <a href="#" onclick="goToRegister({area: 'Notting Hill'})">
+          <button class="btn-small btn-danger">Go on tour!</button>
+        </a>
       </div>
-    </main>
-
-    <footer class="text-muted">
-      <div class="container">
-        <div class="px-0 center my-2 text-center" style="width: 300px">
-          <img src="img/london/londonLogo.jpg" width="300px" />
-          <h2 class="my-3">
-            Lockdown tours
-            <hr />
-            London
-          </h2>
-        </div>
-
-        <p class="float-right">
-          <a href="#">Back to top</a>
+      <div class="kingsXTxt cityTxt">
+        <h4>Kings Cross</h4>
+        <p>
+          A magical place with a fantastic canal-side setting!
         </p>
+        <a href="#" onclick="goToRegister({area: 'kingsX'})">
+          <button class="btn-small btn-danger">Experience it!</button>
+        </a>
       </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      window.jQuery ||
-        document.write(
-          '<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>'
-        );
-    </script>
-    <script src="js/index.js"></script>
-    <script src="js/link.js"></script>
-    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
-    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
-    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/holder.min.js"></script>
-    <script src="js/include.js"></script>
-
+      <div class="westminsterTxt cityTxt">
+        <h4>Westminster</h4>
+        <p>
+          The heart of London's  political, social and cultural affairs.
+        </p>
+        <a href="#" onclick="goToRegister({area: 'westminster'})">
+          <button class="btn-small btn-danger">Go visit!</button>
+        </a>
+      </div>
+      <div class="centralText cityTxt">
+        <h4>Central London</h4>
+        <p>Lose yourself in the mix of tradition, culture, commerce and innovation!</p>
+        <a href="#" onclick="goToRegister({area: 'central'})">
+          <button class="btn-small btn-danger">See it live!</button>
+        </a>
+      </div>
+      <img src="img/london/Kings Cross square.jpg" class="circular kingsXProfileImg" />
+      <img src="img/london/westminster small.jpg" class="circular westminsterProfileImg" />
+      <img src="img/london/Notting hill small.jpg" class="circular nottingHillProfileImg" />
+      <img src="img/london/piccadilly circus square.jpg" class="circular centralProfileImg" />
+      <img src="img/bubble.png" class="bubble westminster" />
+      <img src="img/bubble.png" class="bubble nottingHill" />
+      <img src="img/bubble.png" class="bubble kingsX" />
+      <img src="img/bubble.png" class="bubble central" />
+      <img src="img/london/map.png" width="800px" />
+    </div>
   </body>
+  <script src="js/link.js"></script>
 </html>
