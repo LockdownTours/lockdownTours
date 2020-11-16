@@ -1,6 +1,17 @@
 let interests = [];
 let areas = [];
 
+// $('.datepicker').datepicker();
+
+$('#datepicker').datepicker({
+  weekStart: 1,
+  daysOfWeekHighlighted: "6,0",
+  autoclose: true,
+  todayHighlight: true,
+});
+$('#datepicker').datepicker("setDate", new Date());
+
+
 function getDetails() {
   var details;
   try {
@@ -105,12 +116,18 @@ $(document).ready(function () {
 $(document).on("click", ".register-submit-btn", function () {
   if (!$(".register-submit-btn").hasClass("register-disabled")) {
     var email = $(".emailInput").val();
+    var date = $('#datepicker').datepicker({ dateFormat: 'dd,MM,yyyy' }).val();
+    var timezone = $('#timezone').val();
     console.log("Email: ", email);
     console.log("Interests: ", interests);
     console.log("Areas: ", areas);
+    console.log("Date:", date)
+    console.log("Timezone:", timezone)
 
     var database = firebase.database();
     firebase.database().ref('users/').push({
+      timezone: timezone,
+      date: date,
       email: email,
       interests: interests,
       areas: areas
