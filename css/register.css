@@ -1,3 +1,11 @@
+.tokyoShops{
+  background: url(../img/tokyo_shops.jpg);
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/tokyo_shops.jpg');
+  background-size: cover;
+  font-family: "Agenor-Regular";
+}
+
 .register-header {
   background: black;
 }
@@ -45,7 +53,7 @@
 }
 
 hr {
-  border-color: white;
+  /* border-color: white; */
 }
 
 .register-loading, .register-success, .register-failure {
