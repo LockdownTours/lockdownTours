@@ -552,69 +552,66 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script
-    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"
-  ></script>
-
-    <!-- BOOTSTRAP CAL -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- BOOTSTRAP CAL -->
-
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
     
-  <script>
-    window.jQuery ||
-      document.write(
-        '<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>'
-      );
-  </script>
-  <!-- FIREBASE -->
-<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+  <!-- BOOTSTRAP CAL -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP CAL -->
+
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>'
+        );
+    </script>
 <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
-   https://firebase.google.com/docs/web/setup#available-libraries -->
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
   <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script>
 
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
 
-  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyDcTrvSzLTiS2eG2Qa5oCKcESJHwcX8Rc8",
+        authDomain: "lockdowntours-2462b.firebaseapp.com",
+        databaseURL: "https://lockdowntours-2462b.firebaseio.com",
+        projectId: "lockdowntours-2462b",
+        storageBucket: "lockdowntours-2462b.appspot.com",
+        messagingSenderId: "840910521569",
+        appId: "1:840910521569:web:72328ff4fc1bd2941963a0",
+        measurementId: "G-P8S69EY9NK"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
 
-<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script>
-
-<!-- Add Firebase products that you want to use -->
-<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
-
-  <script>
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    var firebaseConfig = {
-      apiKey: "AIzaSyDcTrvSzLTiS2eG2Qa5oCKcESJHwcX8Rc8",
-      authDomain: "lockdowntours-2462b.firebaseapp.com",
-      databaseURL: "https://lockdowntours-2462b.firebaseio.com",
-      projectId: "lockdowntours-2462b",
-      storageBucket: "lockdowntours-2462b.appspot.com",
-      messagingSenderId: "840910521569",
-      appId: "1:840910521569:web:72328ff4fc1bd2941963a0",
-      measurementId: "G-P8S69EY9NK"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-
-  </script>
-  <!-- firebase -->
-  <script src="js/register.js"></script>
-  <script src="js/include.js"></script>
-  <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
-  <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
-  <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/holder.min.js"></script>
-
-
+    </script>
+    <!-- firebase -->
+    <script src="js/register.js"></script>
+    <script src="js/link.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/holder.min.js"></script>
+    <script src="js/include.js"></script>
 
   </body>
 </html>
