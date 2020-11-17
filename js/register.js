@@ -20,6 +20,10 @@ function getDetails() {
   catch(err) {
     details = {};
   }
+  if(tokyo == true){
+    details = {area: "Tokyo"};
+  }
+  console.log(details);
   // Print value for header
   var value = "Japan";
   for (key in details) {
